@@ -1,0 +1,59 @@
+
+LocalStack version: 3.6.1.dev20240805094804
+LocalStack build date: 2024-08-05
+LocalStack build git hash: 98cc4e6
+
+2024-08-06T16:56:32.622  INFO --- [  MainThread] l.p.c.b.licensingv2        : Successfully requested and activated new license 1nU...:pro 🔑✅
+2024-08-06T16:56:34.783  INFO --- [  MainThread] l.p.c.extensions.platform  : loaded 0 extensions
+Ready.
+2024-08-06T16:57:36.999  INFO --- [et.reactor-0] localstack.request.aws     : AWS sts.GetCallerIdentity => 200
+2024-08-06T16:57:41.989  INFO --- [et.reactor-0] localstack.request.aws     : AWS cloudformation.DescribeStacks => 400 (ValidationError)
+2024-08-06T16:57:41.997  INFO --- [et.reactor-0] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2024-08-06T16:57:42.003  INFO --- [et.reactor-0] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2024-08-06T16:57:42.009  INFO --- [et.reactor-0] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2024-08-06T16:57:42.500  INFO --- [et.reactor-0] l.p.c.services.s3.provider : Using /tmp/localstack/state/s3 as storage path for s3 assets
+2024-08-06T16:57:47.034  INFO --- [et.reactor-0] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2024-08-06T16:57:47.052  WARN --- [et.reactor-0] l.aws.protocol.serializer  : Response object StackResourceDetail contains a member which is not specified: Timestamp
+2024-08-06T16:57:47.052  INFO --- [et.reactor-0] localstack.request.aws     : AWS cloudformation.DescribeStackResource => 200
+2024-08-06T16:57:47.066  INFO --- [et.reactor-0] localstack.request.aws     : AWS s3.HeadBucket => 200
+2024-08-06T16:57:47.077  INFO --- [et.reactor-0] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2024-08-06T16:57:47.277  INFO --- [et.reactor-0] localstack.request.aws     : AWS lambda.GetFunction => 404 (ResourceNotFoundException)
+2024-08-06T16:57:47.278  INFO --- [et.reactor-1] localstack.request.aws     : AWS lambda.GetFunction => 404 (ResourceNotFoundException)
+2024-08-06T16:57:47.288  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.PutObject => 200
+2024-08-06T16:57:47.295  INFO --- [et.reactor-0] localstack.request.aws     : AWS s3.PutObject => 200
+2024-08-06T16:57:47.361  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.CreateMultipartUpload => 200
+2024-08-06T16:57:47.457  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.458  INFO --- [et.reactor-0] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.469  INFO --- [et.reactor-2] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.515  INFO --- [et.reactor-2] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.519  INFO --- [et.reactor-0] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.523  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.525  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.536  INFO --- [et.reactor-0] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.558  INFO --- [et.reactor-2] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.561  INFO --- [et.reactor-3] localstack.request.aws     : AWS s3.UploadPart => 200
+2024-08-06T16:57:47.636  INFO --- [et.reactor-1] localstack.request.aws     : AWS s3.CompleteMultipartUpload => 200
+2024-08-06T16:57:47.645  INFO --- [et.reactor-0] localstack.request.aws     : AWS cloudformation.DeleteChangeSet => 200
+2024-08-06T16:57:47.651  INFO --- [et.reactor-2] localstack.request.aws     : AWS s3.GetObject => 200
+2024-08-06T16:57:47.654  INFO --- [et.reactor-3] localstack.request.aws     : AWS cloudformation.CreateChangeSet => 200
+2024-08-06T16:57:47.658  INFO --- [et.reactor-1] localstack.request.aws     : AWS cloudformation.DescribeChangeSet => 200
+2024-08-06T16:57:47.663  INFO --- [et.reactor-0] localstack.request.aws     : AWS cloudformation.ExecuteChangeSet => 200
+2024-08-06T16:57:47.713  WARN --- [-functhread6] l.s.c.resource_provider    : Unable to update resource type "AWS::S3::Bucket", id "ServerlessDeploymentBucket"
+2024-08-06T16:57:51.165  WARN --- [-functhread6] l.s.c.resource_provider    : Unable to update resource type "AWS::S3::BucketPolicy", id "ServerlessDeploymentBucketPolicy"
+2024-08-06T16:57:52.672  INFO --- [et.reactor-4] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2024-08-06T16:57:57.685  INFO --- [et.reactor-6] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2024-08-06T16:58:02.726  INFO --- [et.reactor-1] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2024-08-06T16:58:07.757  INFO --- [et.reactor-3] localstack.request.aws     : AWS cloudformation.DescribeStackEvents => 200
+2024-08-06T16:58:07.786  INFO --- [et.reactor-6] localstack.request.aws     : AWS cloudformation.DescribeStacks => 200
+2024-08-06T16:58:07.801  INFO --- [et.reactor-2] localstack.request.aws     : AWS cloudformation.ListStackResources => 200
+2024-08-06T16:58:07.838  INFO --- [et.reactor-5] localstack.request.aws     : AWS s3.ListObjectsV2 => 200
+2024-08-06T17:09:50.540  INFO --- [et.reactor-2] localstack.request.http    : POST /restapis/8nasnvxpir/e2e/_user_request_/signUp => 404
+2024-08-06T17:10:00.169  INFO --- [et.reactor-6] l.u.container_networking   : Determined main container network: localstack-jwt-issue-sample_default
+2024-08-06T17:10:00.172  INFO --- [et.reactor-6] l.u.container_networking   : Determined main container target IP: 192.168.239.2
+2024-08-06T17:10:09.103  INFO --- [et.reactor-0] localstack.request.http    : POST /_localstack_lambda/01600a12351b6ce95e652602b2c80c27/status/01600a12351b6ce95e652602b2c80c27/ready => 202
+2024-08-06T17:10:09.191  INFO --- [et.reactor-4] localstack.request.aws     : AWS cognito-idp.AdminCreateUser => 400 (InvalidParameterException)
+2024-08-06T17:10:09.221  INFO --- [et.reactor-3] localstack.request.http    : POST /_localstack_lambda/01600a12351b6ce95e652602b2c80c27/invocations/6db0a5b9-c4ab-445d-9689-3a5d7dcdedca/logs => 202
+2024-08-06T17:10:09.222  INFO --- [et.reactor-3] localstack.request.http    : POST /_localstack_lambda/01600a12351b6ce95e652602b2c80c27/invocations/6db0a5b9-c4ab-445d-9689-3a5d7dcdedca/error => 202
+2024-08-06T17:10:09.238  WARN --- [et.reactor-1] l.s.apigateway.integration : Lambda output should follow the next JSON format: { "isBase64Encoded": true|false, "statusCode": httpStatusCode, "headers": { "headerName": "headerValue", ... },"body": "..."}
+ Lambda output: {'errorType': 'InvalidParameterException', 'errorMessage': 'Username custommjbzyfkqvmp should be either an email or a phone number.', 'trace': ['InvalidParameterException: Username custommjbzyfkqvmp should be either an email or a phone number.', '    at Request.extractError (/var/task/node_modules/aws-sdk/lib/protocol/json.js:52:27)', '    at Request.callListeners (/var/task/node_modules/aws-sdk/lib/sequential_executor.js:106:20)', '    at Request.emit (/var/task/node_modules/aws-sdk/lib/sequential_executor.js:78:10)', '    at Request.emit (/var/task/node_modules/aws-sdk/lib/request.js:688:14)', '    at Request.transition (/var/task/node_modules/aws-sdk/lib/request.js:22:10)', '    at AcceptorStateMachine.runTo (/var/task/node_modules/aws-sdk/lib/state_machine.js:14:12)', '    at /var/task/node_modules/aws-sdk/lib/state_machine.js:26:10', '    at Request.<anonymous> (/var/task/node_modules/aws-sdk/lib/request.js:38:9)', '    at Request.<anonymous> (/var/task/node_modules/aws-sdk/lib/request.js:690:12)', '    at Request.callListeners (/var/task/node_modules/aws-sdk/lib/sequential_executor.js:116:18)']}
+2024-08-06T17:10:09.239  INFO --- [et.reactor-1] localstack.request.http    : POST /restapis/8nasnvxpir/e2e/_user_request_/sign-up => 502
